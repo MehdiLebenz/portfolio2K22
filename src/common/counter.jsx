@@ -1,5 +1,6 @@
-import React from "react";
-import CountUp from "react-countup";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import CountUp from 'react-countup';
 
 export default function Counter({ number, title }) {
   return (

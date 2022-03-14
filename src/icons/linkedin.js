@@ -1,14 +1,14 @@
-import React  from 'react'
-import { FaLinkedin} from 'react-icons/fa'
-import { IconButton } from "@chakra-ui/button"
+import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
+import { IconButton } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/react';
 
 function Linkedin() {
-    const { toggleColorMode }  = useColorMode(); 
+  const { toggleColorMode } = useColorMode();
   return (
-    <IconButton   icon={<FaLinkedin/>} isRound='true' onClick={toggleColorMode}>    </IconButton>
+    <IconButton icon={<FaLinkedin />} isRound="true" onClick={toggleColorMode}>    </IconButton>
 
-  )
+  );
 }
 
-export default Linkedin
+export default Linkedin;

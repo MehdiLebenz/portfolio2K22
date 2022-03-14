@@ -1,16 +1,15 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
-      <ColorModeScript    initialColorMode='light'> 
-      </ColorModeScript>
-    <App />
+      <ColorModeScript initialColorMode="light" />
+      <App />
     </ChakraProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-

@@ -1,21 +1,23 @@
-import * as React from 'react'
+/* eslint-disable import/no-unresolved */
+import * as React from 'react';
 import ReactDOM from 'react-dom';
+// eslint-disable-next-line import/no-unresolved
 import './index.css';
+import { ChakraProvider } from '@chakra-ui/react';
 import App from './App';
+// eslint-disable-next-line import/extensions
 import reportWebVitals from './reportWebVitals';
-import { ChakraProvider } from '@chakra-ui/react'
 
 ReactDOM.render(
   <React.StrictMode>
-     <ChakraProvider>
+    <ChakraProvider>
       <App />
     </ChakraProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
