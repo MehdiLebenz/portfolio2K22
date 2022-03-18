@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { IconButton } from '@chakra-ui/button';

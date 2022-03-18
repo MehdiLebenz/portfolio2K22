@@ -42,11 +42,8 @@ export default function Project() {
           <Porsche />
           <Vgf />
         </Flex>
-        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8}>
-
-          <Lactalis />
-
-        </Flex>
+        <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8} />
+        <Text fontWeight="bold" mt={8} fontSize="3xl" textAlign="center"> Medium Blog </Text>
       </Box>
 
     </Flex>

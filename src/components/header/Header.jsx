@@ -31,13 +31,13 @@ export default function Header() {
             <Text fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, orange.100, orange.400, orange.700)" bgClip="text">Mehdi Benzarti </Text>
             <Text color={isDark ? 'gray.200' : 'GrayText.500'}>
               {' '}
-              Managing Director - Senior Project Manager  at @Altavia since 2k18
+              Managing Director - Senior Project Manager  at @Altavia
               <br />
               {' '}
-              React enthusiast ❤️
+              React js and Agile enthusiast ❤️
               {' '}
             </Text>
-            <Button mt={8} colorScheme="orange" onClick={() => window.open('')}>
+            <Button mt={8} colorScheme="orange" onClick={() => window.open('https://www.linkedin.com/in/mehdi-benzarti-307bb2121')}>
               Hire Me
             </Button>
           </Box>

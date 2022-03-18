@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import {
-  useMediaQuery, Flex, Box, Heading, Text,
+  useMediaQuery, Flex, Box, Text, Heading,
 } from '@chakra-ui/react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -27,29 +27,42 @@ const Fetchdata = function Fetchdata() {
       direction={isNotSmallerScreen ? 'row' : 'column'}
       w="100%"
       maxWidth={{
-        base: '100vh', md: '130vh', lg: '130vh', xl: '150vh',
+        base: '100vh', md: '130vh', lg: '130vh', xl: '',
       }}
     >
-      <Box alignSelf="center" px="127" py="16">
+      <Box alignSelf="center" px="" py="16">
         <Heading fontWeight="extrabold" color="orange.400" size="4xl">
-          9+
+          4+
         </Heading>
+        <Text fontSize="2xl" color="gray.400">Publications </Text>
+      </Box>
+      <Box px="32" py="16">
         <Text fontSize="2xl" color="gray.400">
           {isLoading && <p>Fetching data from Medium!</p>}
           {' '}
         </Text>
       </Box>
       {finalData.map((article) => (
-        <Box alignSelf="center" px="127" py="16">
-          <Text fontWeight="bold" fontSize="2xl" textAlign="center">Medium Articles </Text>
-          <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8}>
-            <Text>
+        <Box alignSelf="center" px="32" py="16" p={8}>
+          <Text
+            fontWeight="bold"
+            fontSize="xl"
+            textAlign="center"
+          >
+            {article.author}
+          </Text>
+          <Flex direction={isNotSmallerScreen ? 'column' : 'column'} mt={8}>
+            <a
+              href={article.link}
+              style={{
+                textAlign: 'center',
+              }}
+            >
               {' '}
               {article.title}
-            </Text>
+            </a>
             <Flex rounded="xl" ml={isNotSmallerScreen ? 4 : 0} direction="column" mt={4} bg="white" h="21vh" w="21vh" justify="center" _hover={{ bg: 'gray.700' }}>
               <LazyLoadImage
-                href={article.link}
                 alt="abc"
                 effect="blur"
                 src={article.thumbnail}
@@ -59,16 +72,12 @@ const Fetchdata = function Fetchdata() {
                   marginLeft: 'auto',
                   marginRight: 'auto',
                   objectFit: 'cover',
-
                 }}
               />
 
             </Flex>
 
           </Flex>
-          <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8} />
-          <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8} />
-
         </Box>
       ))}
     </Flex>
