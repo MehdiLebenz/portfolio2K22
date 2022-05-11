@@ -28,7 +28,7 @@ export default function Header() {
         >
           <Box mt={isNotSmallerScreen ? '0' : 16} align="flex-start">
             <Text fontSize="5xl" fontWeight="semibold">Hi I am </Text>
-            <Text fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, orange.100, orange.400, orange.700)" bgClip="text">Mehdi Benzarti </Text>
+            <Text fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, orange.100, orange.400, orange.700)" bgClip="text">Amin et Sanfour  </Text>
             <Text color={isDark ? 'gray.200' : 'GrayText.500'}>
               {' '}
               Managing Director - Senior Project Manager  at @Altavia
