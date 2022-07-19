@@ -31,7 +31,7 @@ export default function Header() {
             <Text fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, orange.100, orange.400, orange.700)" bgClip="text">Mehdi Benzarti </Text>
             <Text color={isDark ? 'gray.200' : 'GrayText.500'}>
               {' '}
-              Managing Director - Senior Project Manager  at @Altavia
+              Managing Director - Senior Project Manager  at @wevioo
               <br />
               {' '}
               React js and Agile enthusiast ❤️

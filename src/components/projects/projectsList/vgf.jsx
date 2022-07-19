@@ -14,7 +14,7 @@ function Vgf() {
         effect="blur"
         src={vgf}
         style={{
-          width: 'auto',
+          width: '70%',
           height: 'auto',
           marginLeft: 'auto',
           marginRight: 'auto',

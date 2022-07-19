@@ -14,7 +14,7 @@ function Carrefour() {
         effect="blur"
         src={carrefour}
         style={{
-          width: 'auto',
+          width: '70%',
           height: 'auto',
           marginLeft: 'auto',
           marginRight: 'auto',

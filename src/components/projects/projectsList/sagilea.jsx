@@ -1,10 +1,10 @@
 import React from 'react';
 import { useMediaQuery, Flex } from '@chakra-ui/react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import lacoste from '../../../images/lacoste.png';
+import sagilea from '../../../images/sagilea.png';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-function Lacoste() {
+function Sagilea() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width: 600px');
 
   return (
@@ -12,7 +12,7 @@ function Lacoste() {
       <LazyLoadImage
         alt="abc"
         effect="blur"
-        src={lacoste}
+        src={sagilea}
         style={{
           width: '70%',
           height: 'auto',
@@ -27,4 +27,4 @@ function Lacoste() {
   );
 }
 
-export default Lacoste;
+export default Sagilea;

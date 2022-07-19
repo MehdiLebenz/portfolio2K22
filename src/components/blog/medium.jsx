@@ -20,30 +20,29 @@ const Fetchdata = function Fetchdata() {
       .catch((err) => console.log(err));
   }, []);
 
-  const finalData = mediumData.slice(0, 10);
+  const finalData = mediumData.slice(0, 4);
 
   return (
+
     <Flex
       direction={isNotSmallerScreen ? 'row' : 'column'}
       w="100%"
       maxWidth={{
-        base: '100vh', md: '130vh', lg: '130vh', xl: '',
+        base: '100vh', md: '130vh', lg: '130vh', xl: '150vh',
       }}
     >
-      <Box alignSelf="center" px="" py="16">
+      <Box alignSelf="center" px="75" py="16">
         <Heading fontWeight="extrabold" color="orange.400" size="4xl">
           4+
         </Heading>
         <Text fontSize="2xl" color="gray.400">Publications </Text>
       </Box>
-      <Box px="32" py="16">
-        <Text fontSize="2xl" color="gray.400">
-          {isLoading && <p>Fetching data from Medium!</p>}
-          {' '}
-        </Text>
-      </Box>
+      <Text fontSize="2xl" color="gray.400">
+        {isLoading && <p>Fetching data from Medium!</p>}
+        {' '}
+      </Text>
       {finalData.map((article) => (
-        <Box alignSelf="center" px="32" py="16" p={8}>
+        <Box alignSelf="center" px="55" py="16" p={3}>
           <Text
             fontWeight="bold"
             fontSize="xl"
@@ -56,6 +55,7 @@ const Fetchdata = function Fetchdata() {
               href={article.link}
               style={{
                 textAlign: 'center',
+                color: 'Blue',
               }}
             >
               {' '}
@@ -67,8 +67,9 @@ const Fetchdata = function Fetchdata() {
                 effect="blur"
                 src={article.thumbnail}
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
+                  backgroundSize: 'cover',
                   marginLeft: 'auto',
                   marginRight: 'auto',
                   objectFit: 'cover',

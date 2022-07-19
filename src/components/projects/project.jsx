@@ -10,6 +10,7 @@ import Renault from './projectsList/renault';
 import Carrefour from './projectsList/carrefour';
 import Lacoste from './projectsList/lacoste';
 import Vgf from './projectsList/vgf';
+import Sagilea from './projectsList/sagilea';
 
 export default function Project() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width: 600px');
@@ -21,20 +22,20 @@ export default function Project() {
         base: '100vh', md: '130vh', lg: '130vh', xl: '150vh',
       }}
     >
-      <Box alignSelf="center" px="127" py="16">
+      <Box alignSelf="center" px="75" py="16">
         <Heading fontWeight="extrabold" color="orange.400" size="4xl">
-          9+
+          14+
         </Heading>
         <Text fontSize="2xl" color="gray.400">WebSites </Text>
       </Box>
-      <Box alignSelf="center" px="127" py="16">
+      <Box alignSelf="center" px="55" py="16">
         <Text fontWeight="bold" fontSize="2xl" textAlign="center">Projects managed  </Text>
         <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8}>
           <Hyperspread />
           <Renault />
           <Vyv />
           <Carrefour />
-
+          <Sagilea />
         </Flex>
         <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8}>
           <Lacoste />
@@ -43,7 +44,6 @@ export default function Project() {
           <Vgf />
         </Flex>
         <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt={8} />
-        <Text fontWeight="bold" mt={8} fontSize="3xl" textAlign="center"> Medium Blog </Text>
       </Box>
 
     </Flex>

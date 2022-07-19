@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/react-in-jsx-scope */
 import {
-  Flex, Heading, Spacer, useColorMode, VStack,
+  Flex, Heading, Spacer, useColorMode, VStack, Divider,
 } from '@chakra-ui/react';
 import { IconButton } from '@chakra-ui/button';
 import {
@@ -12,6 +12,7 @@ import Social from './components/social/Social';
 import Profil from './components/profil/profil';
 import Project from './components/projects/project';
 import Footer from './components/footer/footer';
+import Timeline from './components/timeline/timeline';
 import Medium from './components/blog/medium';
 
 function App() {
@@ -33,8 +34,12 @@ function App() {
       <Header />
       <Social />
       <Profil />
+      <Divider orientation="horizontal" />
       <Project />
+      <Divider orientation="horizontal" />
       <Medium />
+      <Divider orientation="horizontal" />
+      <Timeline />
       <Footer />
     </VStack>
   );
