@@ -15,13 +15,6 @@ export default function Timeline() {
 
     <VerticalTimeline>
       <Text fontWeight="bold" mt={8} fontSize="3xl" textAlign="center"> Experience Timeline Resume </Text>
-
-      {/* <Box alignSelf="center" px="75" py="16">
-          <Heading fontWeight="extrabold" color="orange.400" size="4xl">
-            4+
-          </Heading>
-          <Text fontSize="2xl" color="gray.400">Publications </Text>
-        </Box> */}
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: '#dd6b20', color: 'black' }}
@@ -30,7 +23,14 @@ export default function Timeline() {
         iconStyle={{ background: '#dd6b20', color: '#fff' }}
         icon={<MdWork />}
       >
-        <h3 style={{ fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px' }} className="vertical-timeline-element-title">Senior Product Manager | Agile Consultant | University Teacher</h3>
+        <h3
+          style={{
+            fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px', color: 'black',
+          }}
+          className="vertical-timeline-element-title"
+        >
+          Senior Product Manager | Agile Consultant | University Teacher
+        </h3>
         <h4 className="vertical-timeline-element-subtitle">IGA Tunisie | Konexia Consulting | Polytech Tunis </h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -39,8 +39,15 @@ export default function Timeline() {
         iconStyle={{ background: 'Gray', color: '#fff' }}
         icon={<MdWork />}
       >
-        <h3 style={{ fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px' }} className="vertical-timeline-element-title">Operations and projects Manager</h3>
-        <h4 className="vertical-timeline-element-subtitle">Oyez</h4>
+        <h3
+          style={{
+            fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px', color: 'black',
+          }}
+          className="vertical-timeline-element-title"
+        >
+          Operations and projects Manager
+        </h3>
+        <h4 style={{ color: 'black' }} className="vertical-timeline-element-subtitle">Oyez</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -48,8 +55,23 @@ export default function Timeline() {
         iconStyle={{ background: 'Gray', color: '#fff' }}
         icon={<MdWork />}
       >
-        <h3 style={{ fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px' }} className="vertical-timeline-element-title">Scrum Master, Product Owner , MOA </h3>
-        <h4 className="vertical-timeline-element-subtitle">Oyez</h4>
+        <h3
+          style={{
+            fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px', color: 'black',
+          }}
+          className="vertical-timeline-element-title"
+        >
+          Scrum Master, Product Owner , MOA
+        </h3>
+        <h4
+          style={{
+            color: 'black',
+          }}
+          className="vertical-timeline-element-subtitle"
+        >
+          Oyez
+
+        </h4>
         <p>
           Scrum , Kanban , Waterfall, V cycle
         </p>
@@ -60,8 +82,15 @@ export default function Timeline() {
         iconStyle={{ background: 'Gray', color: '#fff' }}
         icon={<MdWork />}
       >
-        <h3 style={{ fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px' }} className="vertical-timeline-element-title">IT Project Manager</h3>
-        <h4 className="vertical-timeline-element-subtitle">FTAV</h4>
+        <h3
+          style={{
+            fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px', color: 'black',
+          }}
+          className="vertical-timeline-element-title"
+        >
+          IT Project Manager
+        </h3>
+        <h4 style={{ color: 'black' }} className="vertical-timeline-element-subtitle">FTAV</h4>
         <p>
           User Experience,Project Management, Budget Management, Team Management
         </p>
@@ -72,8 +101,15 @@ export default function Timeline() {
         iconStyle={{ background: 'Gray', color: '#fff' }}
         icon={<MdWork />}
       >
-        <h3 style={{ fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px' }} className="vertical-timeline-element-title">Web Developper</h3>
-        <h4 className="vertical-timeline-element-subtitle">Clynisys</h4>
+        <h3
+          style={{
+            fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px', color: 'black',
+          }}
+          className="vertical-timeline-element-title"
+        >
+          Web Developper
+        </h3>
+        <h4 style={{ color: 'black' }} className="vertical-timeline-element-subtitle">Clynisys</h4>
         <p>
           Wordpress|Javascript|PHP
         </p>
@@ -86,24 +122,19 @@ export default function Timeline() {
         date="2012 - 2015 "
         icon={<MdWork />}
       >
-        <h3 style={{ fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px' }} className="vertical-timeline-element-title">Technical support help desk</h3>
-        <h4 className="vertical-timeline-element-subtitle">Concentrix</h4>
+        <h3
+          style={{
+            fontFamily: 'Papyrus', fontWeight: 'bold', fontSize: '20px', color: 'black',
+          }}
+          className="vertical-timeline-element-title"
+        >
+          Technical support help desk
+        </h3>
+        <h4 style={{ color: 'black' }} className="vertical-timeline-element-subtitle">Concentrix</h4>
         <p>
           Technical Troubleshooting
         </p>
       </VerticalTimelineElement>
-      {/* <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2011"
-        iconStyle={{ background: 'black', color: '#fff' }}
-        icon={<FaUniversity />}
-      >
-        <h3 className="vertical-timeline-element-title">baccalaureate of Science</h3>
-        <h4 className="vertical-timeline-element-subtitle">baccalaureate Degree</h4>
-        <p>
-          Science
-        </p>
-      </VerticalTimelineElement> */}
     </VerticalTimeline>
 
   );
