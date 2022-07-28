@@ -16,6 +16,7 @@ export default function Project() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width: 600px');
   return (
     <Flex
+      id="projects"
       direction={isNotSmallerScreen ? 'row' : 'column'}
       w="100%"
       maxWidth={{

@@ -14,6 +14,7 @@ export default function Profil() {
 
   return (
     <Flex
+      id="certifications"
       direction={isNotSmallerScreen ? 'row' : 'column'}
       w="100%"
       maxWidth={{

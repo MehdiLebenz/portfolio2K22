@@ -12,8 +12,9 @@ import Social from './components/social/Social';
 import Profil from './components/profil/profil';
 import Project from './components/projects/project';
 import Footer from './components/footer/footer';
-import Timeline from './components/timeline/timeline';
 import Medium from './components/blog/medium';
+import Courbe from './components/chart/chart';
+import Topbar from './components/topBar/topbar';
 
 function App() {
   // implement Color Mode / Dark Mode
@@ -32,14 +33,17 @@ function App() {
         <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode} />
       </Flex>
       <Header />
+      <Topbar />
       <Social />
       <Profil />
       <Divider orientation="horizontal" />
       <Project />
       <Divider orientation="horizontal" />
+      <Courbe />
+      <Divider orientation="horizontal" />
       <Medium />
       <Divider orientation="horizontal" />
-      <Timeline />
+      <Divider orientation="horizontal" />
       <Footer />
     </VStack>
   );

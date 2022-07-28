@@ -1,6 +1,5 @@
 import React from 'react';
 import { Image, useMediaQuery } from '@chakra-ui/react';
-import mehdi from '../images/mehdi.JPG';
 
 export default function Avatar() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width: 600px');
@@ -15,7 +14,9 @@ export default function Avatar() {
       backgroundColor="transparent"
       boxShadow="lg"
       boxSize="300px"
-      src={mehdi}
+      src="https://i.ibb.co/Lp182rs/mehdi.jpg"
+      alt="mehdi"
+      border="0"
     />
   );
 }

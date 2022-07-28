@@ -10,7 +10,7 @@ export default function Header() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width: 600px');
 
   return (
-    <div>
+    <div id="header">
       <Stack>
         <Circle
           position="absolute"
@@ -34,7 +34,7 @@ export default function Header() {
               Managing Director - Senior Project Manager  at @wevioo
               <br />
               {' '}
-              React js and Agile enthusiast ❤️
+              React js and Agile enthusiast
               {' '}
             </Text>
             <Button mt={8} colorScheme="orange" onClick={() => window.open('https://www.linkedin.com/in/mehdi-benzarti-307bb2121')}>
